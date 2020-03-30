@@ -15,7 +15,7 @@
     "shopware/core": "6.1.*"
   },
   "extra": {
-    "shopware-plugin-class": "flagbit\\PluginTwitter\\PluginTwitter",
+    "shopware-plugin-class": "Flagbit\\PluginTwitter\\PluginTwitter",
     "label": {
       "de-DE": "Twitter Plugin",
       "en-GB": "Twitter Plugin"
@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "flagbit\\PluginTwitter\\": "src/"
+      "Flagbit\\PluginTwitter\\": "src/"
     }
   }
 }
