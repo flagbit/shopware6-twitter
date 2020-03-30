@@ -1,1 +1,1 @@
-# shopware6-twitter
+# Twitter Plugin for Shopware 6

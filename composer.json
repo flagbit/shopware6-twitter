@@ -1,0 +1,33 @@
+{
+  "name": "flagbit/plugin-twitter",
+  "description": "Shopware 6 Twitter Plugin",
+  "version": "v0.0.1",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Björn Meyer",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "~7.3",
+    "shopware/core": "6.1.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "flagbit\\PluginTwitter\\PluginTwitter",
+    "label": {
+      "de-DE": "Twitter Plugin",
+      "en-GB": "Twitter Plugin"
+    },
+    "description": {
+      "de-DE": "Mit dem Twitter Plugin können Sie Timelines etc. in Ihrem Shop einbinden.",
+      "en-GB": "With the twitter plugin you can integrate twitter timelines into your shop."
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "flagbit\\PluginTwitter\\": "src/"
+    }
+  }
+}
