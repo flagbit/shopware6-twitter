@@ -1,0 +1,9 @@
+{
+  "sw-cms": {
+    "elements": {
+      "customTwitterTimelineElement": {
+        "label": "Twitter Timeline"
+      }
+    }
+  }
+}

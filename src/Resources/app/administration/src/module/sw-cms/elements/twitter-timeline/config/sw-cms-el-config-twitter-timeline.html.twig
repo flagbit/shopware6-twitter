@@ -1,0 +1,11 @@
+{% block sw_cms_element_twitter_timeline_config %}
+    <div class="sw-cms-el-config-twitter-timeline">
+        <sw-field class="twitter-handle-field"
+                  v-model="element.config.twitterHandle.value"
+                  type="text"
+                  label="Twitter Timeline"
+                  placeholder="Enter Twitter Handle."
+                  @blur="onBlur">
+        </sw-field>
+    </div>
+{% endblock %}
