@@ -1,5 +1,5 @@
 # Twitter Plugin for Shopware 6
-This plugin will add a custom twitter cms elements to your shopware 6 store.  
+This plugin will add custom twitter cms elements to your shopware 6 store.  
 All possible twitter elements you can see at [publish.twitter.com](https://publish.twitter.com/).
 ## Custom twitter elements 
 * Twitter Timelines
