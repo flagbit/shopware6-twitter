@@ -13,6 +13,7 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
   * Hashtag :construction:
 * Twitter tweet as quote :construction:
 * Twitter moment :construction:
+> Legend: Implemented :white_check_mark:, Under construction :construction:
 ## Requirements
 * Shopware 6.1. at least
 * PHP 7.3 at least
