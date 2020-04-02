@@ -49,10 +49,6 @@ Component.register('sw-cms-el-twitter-timeline', {
             return document.querySelectorAll(`script[src="${this.getTwitterJsSrc()}"]`);
         },
 
-        queryComponent() {
-            return document.getElementById('flagbit-twitter-timeline');
-        },
-
         addTwitterJs() {
             if (this.queryTwitterSrc().length === 0) {
                 const twitterScript = document.createElement('script');
@@ -64,7 +60,7 @@ Component.register('sw-cms-el-twitter-timeline', {
         },
 
         addTwitterLink() {
-            let component = this.queryComponent();
+            const component = this.$refs.twitterTimeline;
             let a = document.createElement('a');
             a.appendChild(document.createTextNode(this.twitterText()));
             a.className = 'twitter-timeline';
@@ -82,7 +78,7 @@ Component.register('sw-cms-el-twitter-timeline', {
         },
 
         removeTwitterIframe() {
-            const element = this.queryComponent();
+            const element = this.$refs.twitterTimeline;
             element.textContent = '';
         },
 
