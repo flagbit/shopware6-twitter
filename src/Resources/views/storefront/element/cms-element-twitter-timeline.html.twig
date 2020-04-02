@@ -1,0 +1,9 @@
+{% block element_twitter_timeline %}
+    <div data-twitter-timeline="true">
+        <a class="twitter-timeline"
+           href="https://twitter.com/{{ element.config.twitterHandle.value }}">
+            Tweets by {{ element.config.twitterHandle.value }}
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+{% endblock %}
