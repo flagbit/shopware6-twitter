@@ -16,7 +16,7 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 > Legend: Implemented :white_check_mark:, Under construction :construction:
 ## Requirements
 * Shopware 6.1. at least
-* PHP 7.3 at least
+* PHP 7.2 at least
 ## Screens
 Twitter timeline frontend  
 ![Twitter timeline in frontend](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-frontend.png "Twitter timeline in frontend")
