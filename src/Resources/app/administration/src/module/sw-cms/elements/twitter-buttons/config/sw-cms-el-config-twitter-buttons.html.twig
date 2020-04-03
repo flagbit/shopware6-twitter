@@ -1,0 +1,28 @@
+{% block sw_cms_element_twitter_buttons_config %}
+    <div class="sw-cms-el-config-twitter-buttons">
+        {% block sw_cms_element_twitter_buttons_config_buttonType_field %}
+            <sw-select-field
+                :label="$tc('sw-cms.twitter-buttons.label.buttonType')"
+                :options="buttonOptions"
+                v-model="element.config.twitterButtons.buttonType">
+            </sw-select-field>
+        {% endblock %}
+
+        <sw-container v-if="'' !== element.config.twitterButtons.buttonType && 'follow,mention,hashtag,message'.includes(element.config.twitterButtons.buttonType)">
+            <sw-field :class="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].class"
+                      v-model="element.config.twitterButtons.handle"
+                      type="text"
+                      :label="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].label"
+                      :placeholder="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].placeholder">
+            </sw-field>
+
+            <sw-field v-if="'message' === element.config.twitterButtons.buttonType"
+                      class="twitter-mention-button-user-id"
+                      v-model="element.config.twitterButtons.userId"
+                      type="text"
+                      label="User ID"
+                      placeholder="Paste a user ID">
+            </sw-field>
+        </sw-container>
+    </div>
+{% endblock %}

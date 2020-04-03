@@ -3,6 +3,9 @@
     "elements": {
       "customTwitterTimelineElement": {
         "label": "Twitter Timeline"
+      },
+      "customTwitterButtonsElement": {
+        "label": "Twitter Buttons"
       }
     }
   }

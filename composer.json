@@ -1,12 +1,16 @@
 {
   "name": "flagbit/plugin-twitter",
   "description": "Shopware 6 Twitter Plugin",
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "authors": [
     {
       "name": "Björn Meyer",
+      "role": "Developer"
+    },
+    {
+      "name": "Nico Just",
       "role": "Developer"
     }
   ],
