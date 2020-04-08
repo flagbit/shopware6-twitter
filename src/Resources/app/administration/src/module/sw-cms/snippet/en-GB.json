@@ -4,7 +4,7 @@
       "twitterTimeline": {
         "label": "Twitter Timeline",
         "placeHolder": "Enter Twitter Handle.",
-        "type" : {
+        "type": {
           "label": "Timeline Type",
           "placeHolder": "Timeline Type",
           "profile": "Profile Timeline",
@@ -21,7 +21,7 @@
         "label": "List Timeline",
         "placeHolder": "Enter List like e.g. national-parks"
       },
-      "timelineCollection" : {
+      "timelineCollection": {
         "label": "Collection Timeline",
         "placeHolder": "Enter Collection ID like e.g. 539487832448843776"
       }

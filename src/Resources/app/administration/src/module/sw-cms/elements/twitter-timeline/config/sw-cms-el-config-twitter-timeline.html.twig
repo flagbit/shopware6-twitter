@@ -1,43 +1,43 @@
 {% block sw_cms_element_twitter_timeline_config %}
-    <div class="sw-cms-el-config-twitter-timeline">
-        {% block sw_cms_element_twitter_timeline_config_twitter_handle %}
-            <sw-field class="twitter-handle-field"
-                      v-model="element.config.twitterHandle.value"
-                      type="text"
-                      :label="$tc('sw-cms.elements.twitterHandle.label')"
-                      :placeholder="$tc('sw-cms.elements.twitterHandle.placeHolder')">
-            </sw-field>
-        {% endblock %}
+<div class="sw-cms-el-config-twitter-timeline">
+    {% block sw_cms_element_twitter_timeline_config_twitter_handle %}
+        <sw-field class="twitter-handle-field"
+                  v-model="element.config.twitterHandle.value"
+                  type="text"
+                  :label="$tc('sw-cms.elements.twitterHandle.label')"
+                  :placeholder="$tc('sw-cms.elements.twitterHandle.placeHolder')">
+        </sw-field>
+    {% endblock %}
 
-        {% block sw_cms_element_twitter_timeline_config_timeline_type %}
-            <sw-select-field v-model="element.config.timelineType.value"
-                             :label="$tc('sw-cms.elements.twitterTimeline.type.label')"
-                             :placeholder="$tc('sw-cms.elements.twitterTimeline.type.placeHolder')">
-                <option value="profile">{{ $tc('sw-cms.elements.twitterTimeline.type.profile') }}</option>
-                <option value="profileLikes">{{ $tc('sw-cms.elements.twitterTimeline.type.profileLikes') }}</option>
-                <option value="collections">{{ $tc('sw-cms.elements.twitterTimeline.type.collections') }}</option>
-                <option value="lists">{{ $tc('sw-cms.elements.twitterTimeline.type.lists') }}</option>
-            </sw-select-field>
-        {% endblock %}
+    {% block sw_cms_element_twitter_timeline_config_timeline_type %}
+    <sw-select-field v-model="element.config.timelineType.value"
+                     :label="$tc('sw-cms.elements.twitterTimeline.type.label')"
+                     :placeholder="$tc('sw-cms.elements.twitterTimeline.type.placeHolder')">
+        <option value="profile">{{ $tc('sw-cms.elements.twitterTimeline.type.profile') }}</option>
+        <option value="profileLikes">{{ $tc('sw-cms.elements.twitterTimeline.type.profileLikes') }}</option>
+        <option value="collections">{{ $tc('sw-cms.elements.twitterTimeline.type.collections') }}</option>
+        <option value="lists">{{ $tc('sw-cms.elements.twitterTimeline.type.lists') }}</option>
+    </sw-select-field>
+    {% endblock %}
 
-        {% block sw_cms_element_twitter_timeline_config_timeline_list %}
-            <sw-field class="timeline-list-field"
-                      v-if="element.config.timelineType && element.config.timelineType.value === 'lists'"
-                      v-model="element.config.timelineList.value"
-                      type="text"
-                      :label="$tc('sw-cms.elements.timelineList.label')"
-                      :placeholder="$tc('sw-cms.elements.timelineList.placeHolder')">
-            </sw-field>
-        {% endblock %}
+    {% block sw_cms_element_twitter_timeline_config_timeline_list %}
+    <sw-field class="timeline-list-field"
+              v-if="element.config.timelineType && element.config.timelineType.value === 'lists'"
+              v-model="element.config.timelineList.value"
+              type="text"
+              :label="$tc('sw-cms.elements.timelineList.label')"
+              :placeholder="$tc('sw-cms.elements.timelineList.placeHolder')">
+    </sw-field>
+    {% endblock %}
 
-        {% block sw_cms_element_twitter_timeline_config_timeline_collection %}
-            <sw-field class="timeline-collection-field"
-                      v-if="element.config.timelineType && element.config.timelineType.value === 'collections'"
-                      v-model="element.config.timelineCollection.value"
-                      type="text"
-                      :label="$tc('sw-cms.elements.timelineCollection.label')"
-                      :placeholder="$tc('sw-cms.elements.timelineCollection.placeHolder')">
-            </sw-field>
-        {% endblock %}
-    </div>
+    {% block sw_cms_element_twitter_timeline_config_timeline_collection %}
+    <sw-field class="timeline-collection-field"
+              v-if="element.config.timelineType && element.config.timelineType.value === 'collections'"
+              v-model="element.config.timelineCollection.value"
+              type="text"
+              :label="$tc('sw-cms.elements.timelineCollection.label')"
+              :placeholder="$tc('sw-cms.elements.timelineCollection.placeHolder')">
+    </sw-field>
+    {% endblock %}
+</div>
 {% endblock %}

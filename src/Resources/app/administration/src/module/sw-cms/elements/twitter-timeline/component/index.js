@@ -1,7 +1,7 @@
 import template from './sw-cms-el-twitter-timeline.html.twig';
 import './sw-cms-el-twitter-timeline.scss';
 
-const { Component, Mixin } = Shopware;
+const {Component, Mixin} = Shopware;
 
 
 Component.register('sw-cms-el-twitter-timeline', {
@@ -45,7 +45,6 @@ Component.register('sw-cms-el-twitter-timeline', {
     methods: {
         twitterHandle() {
             const elemData = this.element.config;
-
             if (elemData && elemData.twitterHandle) {
                 return 'https://twitter.com/' + elemData.twitterHandle.value;
             }
@@ -53,7 +52,6 @@ Component.register('sw-cms-el-twitter-timeline', {
 
         setTwitterHref(twitterHref) {
             const elemData = this.element.config;
-
             if (elemData && elemData.twitterHref) {
                 this.element.config.twitterHref.value = twitterHref;
             }
@@ -83,14 +81,13 @@ Component.register('sw-cms-el-twitter-timeline', {
 
         twitterText() {
             const elemData = this.element.config;
-
             if (elemData && elemData.twitterHandle) {
                 return 'Tweets by ' + this.element.config.twitterHandle.value;
             }
         },
 
         getTwitterJsSrc() {
-          return 'https://platform.twitter.com/widgets.js';
+            return 'https://platform.twitter.com/widgets.js';
         },
 
         queryTwitterSrc() {

@@ -3,7 +3,7 @@
     "elements": {
       "twitterTimeline": {
         "label": "Twitter Timeline",
-        "type" : {
+        "type": {
           "label": "Art der Zeitachse",
           "placeHolder": "Timeline Type",
           "profile": "Profile Timeline",
@@ -20,7 +20,7 @@
         "label": "List Timeline",
         "placeHolder": "Enter List like e.g. national-parks"
       },
-      "timelineCollection" : {
+      "timelineCollection": {
         "label": "Collection Timeline",
         "placeHolder": "Enter Collection ID like e.g. 539487832448843776"
       }

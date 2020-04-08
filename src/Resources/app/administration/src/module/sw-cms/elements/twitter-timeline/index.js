@@ -22,11 +22,11 @@ Shopware.Service('cmsService').registerCmsElement({
             source: 'static',
             value: 'profile'
         },
-        timelineList : {
+        timelineList: {
             source: 'static',
             value: ''
         },
-        timelineCollection : {
+        timelineCollection: {
             source: 'static',
             value: ''
         }
