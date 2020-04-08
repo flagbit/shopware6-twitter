@@ -4,9 +4,9 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 ## Custom twitter elements 
 * Twitter Timelines
   * For profiles :white_check_mark:
-  * For collections :construction:
-  * For lists :construction:
-  * For profile likes :construction:
+  * For collections :white_check_mark:
+  * For lists :white_check_mark:
+  * For profile likes :white_check_mark:
 * Twitter Buttons
   * Follow :construction:
   * Mention :construction:
@@ -18,8 +18,8 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 * Shopware 6.1. at least
 * PHP 7.2 at least
 ## Screens
-Twitter timeline frontend  
+###Twitter timeline frontend  
 ![Twitter timeline in frontend](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-frontend.png "Twitter timeline in frontend")
-Twitter timeline backend  
-![Twitter timeline backend configuration](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-backend.png "Twitter timeline backend configuration")
+###Twitter timeline backend  
+![Twitter timeline backend configuration](https://raw.githubusercontent.com/flagbit/shopware6-twitter/97b07d18b75e5d0cdc1623b2c3c3b80f396c1b29/docs/images/shopware-6-twitter-timeline-backend.png "Twitter timeline backend configuration")
 
