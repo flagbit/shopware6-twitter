@@ -17,23 +17,23 @@ Component.register('sw-cms-el-config-twitter-buttons', {
             buttonOptions: [
                 {
                     id: 'share',
-                    name: this.$tc('sw-cms.twitterButtons.share.label'),
+                    name: this.$tc('sw-cms.elements.twitterButtons.share.label'),
                 },
                 {
                     id: 'follow',
-                    name: this.$tc('sw-cms.twitterButtons.follow.label'),
+                    name: this.$tc('sw-cms.elements.twitterButtons.follow.label'),
                 },
                 {
                     id: 'mention',
-                    name: this.$tc('sw-cms.twitterButtons.mention.label'),
+                    name: this.$tc('sw-cms.elements.twitterButtons.mention.label'),
                 },
                 {
                     id: 'hashtag',
-                    name: this.$tc('sw-cms.twitterButtons.hashtag.label'),
+                    name: this.$tc('sw-cms.elements.twitterButtons.hashtag.label'),
                 },
                 {
                     id: 'message',
-                    name: this.$tc('sw-cms.twitterButtons.message.label'),
+                    name: this.$tc('sw-cms.elements.twitterButtons.message.label'),
                 }
             ],
         };

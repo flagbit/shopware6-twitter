@@ -7,7 +7,7 @@
       "twitterButtons": {
         "label": "Twitter Buttons",
         "share": {
-          "label": "Twitter Share Button",
+          "label": "Share Button",
           "options": {
             "handle": {
               "placeholder": ""
@@ -15,7 +15,7 @@
           }
         },
         "follow": {
-          "label": "Twitter Follow Button",
+          "label": "Follow Button",
           "options": {
             "handle": {
               "placeholder": "Paste a profile URL or @username"
@@ -23,7 +23,7 @@
           }
         },
         "mention": {
-          "label": "Twitter Mention Button",
+          "label": "Mention Button",
           "options": {
             "handle": {
               "placeholder": "Paste a profile URL or @username"
@@ -31,7 +31,7 @@
           }
         },
         "hashtag": {
-          "label": "Twitter Hashtag Button",
+          "label": "Hashtag Button",
           "options": {
             "handle": {
               "placeholder": "Paste a hashtag URL or #hashtag"
@@ -39,7 +39,7 @@
           }
         },
         "message": {
-          "label": "Twitter Message Button",
+          "label": "Message Button",
           "options": {
             "handle": {
               "placeholder": "Paste a profile URL or @username"
