@@ -5,8 +5,7 @@
                       v-model="element.config.twitterHandle.value"
                       type="text"
                       :label="$tc('sw-cms.elements.twitterHandle.label')"
-                      :placeholder="$tc('sw-cms.elements.twitterHandle.placeHolder')"
-                      @blur="onBlur">
+                      :placeholder="$tc('sw-cms.elements.twitterHandle.placeHolder')">
             </sw-field>
         {% endblock %}
 
@@ -22,23 +21,23 @@
         {% endblock %}
 
         {% block sw_cms_element_twitter_timeline_config_timeline_list %}
-        <sw-field class="timeline-list-field"
-                  v-if="shouldShowTimelineList()"
-                  v-model="element.config.timelineList.value"
-                  type="text"
-                  :label="$tc('sw-cms.elements.timelineList.label')"
-                  :placeholder="$tc('sw-cms.elements.timelineList.placeHolder')">
-        </sw-field>
+            <sw-field class="timeline-list-field"
+                      v-if="element.config.timelineType && element.config.timelineType.value === 'lists'"
+                      v-model="element.config.timelineList.value"
+                      type="text"
+                      :label="$tc('sw-cms.elements.timelineList.label')"
+                      :placeholder="$tc('sw-cms.elements.timelineList.placeHolder')">
+            </sw-field>
         {% endblock %}
 
         {% block sw_cms_element_twitter_timeline_config_timeline_collection %}
-        <sw-field class="timeline-collection-field"
-                  v-if="shouldShowTimelineCollection()"
-                  v-model="element.config.timelineCollection.value"
-                  type="text"
-                  :label="$tc('sw-cms.elements.timelineCollection.label')"
-                  :placeholder="$tc('sw-cms.elements.timelineCollection.placeHolder')">
-        </sw-field>
+            <sw-field class="timeline-collection-field"
+                      v-if="element.config.timelineType && element.config.timelineType.value === 'collections'"
+                      v-model="element.config.timelineCollection.value"
+                      type="text"
+                      :label="$tc('sw-cms.elements.timelineCollection.label')"
+                      :placeholder="$tc('sw-cms.elements.timelineCollection.placeHolder')">
+            </sw-field>
         {% endblock %}
     </div>
 {% endblock %}
