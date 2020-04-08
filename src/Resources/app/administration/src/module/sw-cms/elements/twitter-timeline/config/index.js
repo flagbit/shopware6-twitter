@@ -27,6 +27,14 @@ Component.register('sw-cms-el-config-twitter-timeline', {
                 this.element.config.twitterHandle.value = content;
                 this.$emit('element-update', this.element);
             }
+        },
+
+        shouldShowTimelineList() {
+            return (this.element.config.timelineType.value === 'lists');
+        },
+
+        shouldShowTimelineCollection() {
+            return (this.element.config.timelineType.value === 'collections');
         }
     }
 });

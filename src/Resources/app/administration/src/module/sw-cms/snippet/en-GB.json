@@ -1,8 +1,29 @@
 {
   "sw-cms": {
     "elements": {
-      "customTwitterTimelineElement": {
-        "label": "Twitter Timeline"
+      "twitterTimeline": {
+        "label": "Twitter Timeline",
+        "placeHolder": "Enter Twitter Handle.",
+        "type" : {
+          "label": "Timeline Type",
+          "placeHolder": "Timeline Type",
+          "profile": "Profile Timeline",
+          "profileLikes": "Profile Likes Timeline",
+          "collections": "Collections Timeline",
+          "lists": "Lists Timeline"
+        }
+      },
+      "twitterHandle": {
+        "label": "Twitter Handle",
+        "placeHolder": "Enter Twitter Handle."
+      },
+      "timelineList": {
+        "label": "List Timeline",
+        "placeHolder": "Enter List like e.g. national-parks"
+      },
+      "timelineCollection" : {
+        "label": "Collection Timeline",
+        "placeHolder": "Enter Collection ID like e.g. 539487832448843776"
       }
     }
   }
