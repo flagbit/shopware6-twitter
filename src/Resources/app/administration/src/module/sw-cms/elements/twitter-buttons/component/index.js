@@ -39,6 +39,21 @@ Component.register('sw-cms-el-twitter-buttons', {
             twitterIframe.setAttribute('src', 'https://platform.twitter.com/widgets.js');
 
             document.head.appendChild(twitterIframe);
+        },
+        showShareButton() {
+            return "share" === this.element.config.twitterButtons.buttonType;
+        },
+        showFollowButton() {
+            return "follow" === this.element.config.twitterButtons.buttonType;
+        },
+        showMentionButton() {
+            return "mention" === this.element.config.twitterButtons.buttonType;
+        },
+        showHashtagButton() {
+            return "hashtag" === this.element.config.twitterButtons.buttonType;
+        },
+        showMessageButton() {
+            return "message" === this.element.config.twitterButtons.buttonType;
         }
     }
 });

@@ -4,8 +4,51 @@
       "customTwitterTimelineElement": {
         "label": "Twitter Timeline"
       },
-      "customTwitterButtonsElement": {
-        "label": "Twitter Buttons"
+      "twitterButtons": {
+        "label": "Twitter Buttons",
+        "share": {
+          "label": "Twitter Share Button",
+          "options": {
+            "handle": {
+              "placeholder": ""
+            }
+          }
+        },
+        "follow": {
+          "label": "Twitter Follow Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a profile URL or @username"
+            }
+          }
+        },
+        "mention": {
+          "label": "Twitter Mention Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a profile URL or @username"
+            }
+          }
+        },
+        "hashtag": {
+          "label": "Twitter Hashtag Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a hashtag URL or #hashtag"
+            }
+          }
+        },
+        "message": {
+          "label": "Twitter Message Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a profile URL or @username"
+            },
+            "userId": {
+              "placeholder": "Paste a user ID"
+            }
+          }
+        }
       }
     }
   }

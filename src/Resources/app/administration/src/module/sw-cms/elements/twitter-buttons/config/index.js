@@ -17,23 +17,23 @@ Component.register('sw-cms-el-config-twitter-buttons', {
             buttonOptions: [
                 {
                     id: 'share',
-                    name: this.$tc('sw-cms.twitter-buttons.label.buttonOptionShare'),
+                    name: this.$tc('sw-cms.twitterButtons.share.label'),
                 },
                 {
                     id: 'follow',
-                    name: this.$tc('sw-cms.twitter-buttons.label.buttonOptionFollow'),
+                    name: this.$tc('sw-cms.twitterButtons.follow.label'),
                 },
                 {
                     id: 'mention',
-                    name: this.$tc('sw-cms.twitter-buttons.label.buttonOptionMention'),
+                    name: this.$tc('sw-cms.twitterButtons.mention.label'),
                 },
                 {
                     id: 'hashtag',
-                    name: this.$tc('sw-cms.twitter-buttons.label.buttonOptionHashtag'),
+                    name: this.$tc('sw-cms.twitterButtons.hashtag.label'),
                 },
                 {
                     id: 'message',
-                    name: this.$tc('sw-cms.twitter-buttons.label.buttonOptionMessage'),
+                    name: this.$tc('sw-cms.twitterButtons.message.label'),
                 }
             ],
         };
@@ -47,5 +47,19 @@ Component.register('sw-cms-el-config-twitter-buttons', {
         createdComponent() {
             this.initElementConfig('twitter-buttons');
         },
+
+        showHandle() {
+            let types = '';
+            for (let [key, value] of Object.entries(this._data.buttonOptions)) {
+                types += value.id;
+            }
+
+            return '' !== this.element.config.twitterButtons.buttonType &&
+                types.includes(this.element.config.twitterButtons.buttonType);
+        },
+
+        showUserId() {
+            return 'message' === this.element.config.twitterButtons.buttonType;
+        }
     },
 });

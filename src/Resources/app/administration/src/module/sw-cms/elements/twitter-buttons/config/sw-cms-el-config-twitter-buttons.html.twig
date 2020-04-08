@@ -2,26 +2,22 @@
     <div class="sw-cms-el-config-twitter-buttons">
         {% block sw_cms_element_twitter_buttons_config_buttonType_field %}
             <sw-select-field
-                :label="$tc('sw-cms.twitter-buttons.label.buttonType')"
+                :label="$tc('sw-cms.twitterButtons.label')"
                 :options="buttonOptions"
                 v-model="element.config.twitterButtons.buttonType">
             </sw-select-field>
         {% endblock %}
 
-        <sw-container v-if="'' !== element.config.twitterButtons.buttonType && 'follow,mention,hashtag,message'.includes(element.config.twitterButtons.buttonType)">
-            <sw-field :class="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].class"
-                      v-model="element.config.twitterButtons.handle"
+        <sw-container v-if="showHandle()">
+            <sw-field v-model="element.config.twitterButtons.handle"
                       type="text"
-                      :label="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].label"
-                      :placeholder="element.config.twitterButtons.buttonOptions[element.config.twitterButtons.buttonType].placeholder">
+                      :placeholder="$tc(`sw-cms.twitterButtons.${element.config.twitterButtons.buttonType}.options.handle.placeholder`)">
             </sw-field>
 
-            <sw-field v-if="'message' === element.config.twitterButtons.buttonType"
-                      class="twitter-mention-button-user-id"
+            <sw-field v-if="showUserId()"
                       v-model="element.config.twitterButtons.userId"
                       type="text"
-                      label="User ID"
-                      placeholder="Paste a user ID">
+                      :placeholder="$tc(`sw-cms.twitterButtons.${element.config.twitterButtons.buttonType}.options.userID.placeholder`)">
             </sw-field>
         </sw-container>
     </div>
