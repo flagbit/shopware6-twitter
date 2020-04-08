@@ -9,6 +9,10 @@ Shopware.Service('cmsService').registerCmsElement({
     configComponent: 'sw-cms-el-config-twitter-timeline',
     previewComponent: 'sw-cms-el-preview-twitter-timeline',
     defaultConfig: {
+        twitterHref: {
+            source: 'static',
+            value: '',
+        },
         twitterHandle: {
             source: 'static',
             value: '',
