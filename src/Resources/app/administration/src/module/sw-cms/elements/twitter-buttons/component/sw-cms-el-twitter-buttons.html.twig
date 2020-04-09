@@ -1,39 +1,10 @@
 {% block sw_cms_element_twitter_buttons %}
     <div class="sw-cms-el-twitter-buttons" ref="twitterButtons">
-        <a v-if="showShareButton()"
-           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-           class="twitter-share-button"
-           data-size="large"
-           data-show-count="false">Tweet
-        </a>
-
-        <a v-if="showFollowButton()"
-           :href="`https://twitter.com/${element.config.twitterButtons.handle}?ref_src=twsrc%5Etfw`"
-           class="twitter-follow-button"
-           data-size="large"
-           data-show-count="false">Follow @{{ element.config.twitterButtons.handle }}
-        </a>
-
-        <a v-if="showMentionButton()"
-           :href="`https://twitter.com/intent/tweet?screen_name=${element.config.twitterButtons.handle}&ref_src=twsrc%5Etfw`"
-           class="twitter-mention-button"
-           data-size="large"
-           data-show-count="false">Tweet to @{{ element.config.twitterButtons.handle }}
-        </a>
-
-        <a v-if="showHashtagButton()"
-           :href="`https://twitter.com/intent/tweet?button_hashtag=${element.config.twitterButtons.handle}&ref_src=twsrc%5Etfw`"
-           class="twitter-hashtag-button"
-           data-size="large"
-           data-show-count="false">Tweet #{{ element.config.twitterButtons.handle }}
-        </a>
-
-        <a v-if="showMessageButton()"
-           :href="`https://twitter.com/messages/compose?recipient_id=${element.config.twitterButtons.userId}&ref_src=twsrc%5Etfw`"
-           class="twitter-dm-button"
-           data-size="large"
+        <a :href="hrefText"
+           :class="classText"
            :data-screen-name="element.config.twitterButtons.handle"
-           data-show-count="false">Message @{{ element.config.twitterButtons.handle }}
+           data-size="large"
+           data-show-count="false">{{ message }}
         </a>
     </div>
 {% endblock %}

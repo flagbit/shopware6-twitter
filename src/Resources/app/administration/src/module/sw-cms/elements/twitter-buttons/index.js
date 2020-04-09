@@ -1,3 +1,4 @@
+import './service/configDataProvider.service'
 import './component';
 import './config';
 import './preview';
@@ -8,6 +9,7 @@ Shopware.Service('cmsService').registerCmsElement({
     component: 'sw-cms-el-twitter-buttons',
     configComponent: 'sw-cms-el-config-twitter-buttons',
     previewComponent: 'sw-cms-el-preview-twitter-buttons',
+    service: 'configDataProviderService',
     defaultConfig: {
         twitterButtons: {
             handle: '',
