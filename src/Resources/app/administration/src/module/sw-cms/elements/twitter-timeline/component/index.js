@@ -53,7 +53,7 @@ Component.register('sw-cms-el-twitter-timeline', {
         setTwitterHref(twitterHref) {
             const elemData = this.element.config;
             if (elemData && elemData.twitterHref) {
-                this.element.config.twitterHref.value = twitterHref;
+                elemData.twitterHref.value = twitterHref;
             }
         },
 
@@ -82,7 +82,7 @@ Component.register('sw-cms-el-twitter-timeline', {
         twitterText() {
             const elemData = this.element.config;
             if (elemData && elemData.twitterHandle) {
-                return 'Tweets by ' + this.element.config.twitterHandle.value;
+                return 'Tweets by ' + elemData.twitterHandle.value;
             }
         },
 
