@@ -12,17 +12,14 @@
     {% block sw_cms_element_twitter_timeline_config_timeline_type %}
     <sw-select-field v-model="element.config.timelineType.value"
                      :label="$tc('sw-cms.elements.twitterTimeline.type.label')"
+                     :options="selectOptions"
                      :placeholder="$tc('sw-cms.elements.twitterTimeline.type.placeHolder')">
-        <option value="profile">{{ $tc('sw-cms.elements.twitterTimeline.type.profile') }}</option>
-        <option value="profileLikes">{{ $tc('sw-cms.elements.twitterTimeline.type.profileLikes') }}</option>
-        <option value="collections">{{ $tc('sw-cms.elements.twitterTimeline.type.collections') }}</option>
-        <option value="lists">{{ $tc('sw-cms.elements.twitterTimeline.type.lists') }}</option>
     </sw-select-field>
     {% endblock %}
 
     {% block sw_cms_element_twitter_timeline_config_timeline_list %}
     <sw-field class="timeline-list-field"
-              v-if="element.config.timelineType && element.config.timelineType.value === 'lists'"
+              v-if="showListsField()"
               v-model="element.config.timelineList.value"
               type="text"
               :label="$tc('sw-cms.elements.timelineList.label')"
@@ -32,7 +29,7 @@
 
     {% block sw_cms_element_twitter_timeline_config_timeline_collection %}
     <sw-field class="timeline-collection-field"
-              v-if="element.config.timelineType && element.config.timelineType.value === 'collections'"
+              v-if="showCollectionsField()"
               v-model="element.config.timelineCollection.value"
               type="text"
               :label="$tc('sw-cms.elements.timelineCollection.label')"
