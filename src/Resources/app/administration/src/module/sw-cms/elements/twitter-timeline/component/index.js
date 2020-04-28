@@ -77,7 +77,7 @@ Component.register('sw-cms-el-twitter-timeline', {
                 }
             }
 
-            return twitterHandle; // in default profile will be returned
+            return twitterHandle; // default profile will be returned
         },
 
         getTwitterText() {

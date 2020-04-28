@@ -22,8 +22,8 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 
 ## Screens
 
-###Twitter timeline frontend
+### Twitter timeline frontend
 ![Twitter timeline in frontend](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-frontend.png "Twitter timeline in frontend")
 
-###Twitter timeline backend
+### Twitter timeline backend
 ![Twitter timeline backend configuration](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-backend.png "Twitter timeline backend configuration")
