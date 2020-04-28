@@ -2,27 +2,27 @@
   "sw-cms": {
     "elements": {
       "twitterTimeline": {
-        "label": "Twitter Timeline",
+        "label": "Twitter Zeitachse (Timeline)",
         "type": {
-          "label": "Art der Zeitachse",
-          "placeHolder": "Timeline Type",
-          "profile": "Profile Timeline",
-          "profileLikes": "Profile Likes Timeline",
-          "collections": "Collections Timeline",
-          "lists": "Lists Timeline"
+          "label": "Art der Zeitachse (Timeline)",
+          "placeHolder": "Zeitachsenart",
+          "profile": "Profil-Zeitachse",
+          "profileLikes": "Profil-Likes-Zeitachse",
+          "collections": "Sammlungs-Zeitachse",
+          "lists": "Listen-Zeitachse"
         }
       },
       "twitterHandle": {
-        "label": "Twitter Handle",
-        "placeHolder": "Enter Twitter Handle."
+        "label": "Twitter Kürzel (Handle)",
+        "placeHolder": "Twitter Kürzel (Handle) eingeben."
       },
       "timelineList": {
-        "label": "List Timeline",
-        "placeHolder": "Enter List like e.g. national-parks"
+        "label": "Listen-Zeitachse",
+        "placeHolder": "Gebe eine Liste wie z.B. national-parks ein."
       },
       "timelineCollection": {
-        "label": "Collection Timeline",
-        "placeHolder": "Enter Collection ID like e.g. 539487832448843776"
+        "label": "Sammlungs-Zeitachse",
+        "placeHolder": "Geben eine Sammlungs-ID wie z.B. 539487832448843776 ein."
       }
     }
   }

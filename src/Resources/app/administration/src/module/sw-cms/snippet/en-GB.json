@@ -3,7 +3,6 @@
     "elements": {
       "twitterTimeline": {
         "label": "Twitter Timeline",
-        "placeHolder": "Enter Twitter Handle.",
         "type": {
           "label": "Timeline Type",
           "placeHolder": "Timeline Type",

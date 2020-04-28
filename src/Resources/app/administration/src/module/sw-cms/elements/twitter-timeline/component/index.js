@@ -43,11 +43,14 @@ Component.register('sw-cms-el-twitter-timeline', {
     },
 
     methods: {
-        twitterHandle() {
+        getTwitterHandle() {
             const elemData = this.element.config;
+            const twitterUrl = 'https://twitter.com/';
             if (elemData && elemData.twitterHandle) {
-                return 'https://twitter.com/' + elemData.twitterHandle.value;
+                return twitterUrl + elemData.twitterHandle.value;
             }
+
+            return twitterUrl + 'flagbit';
         },
 
         setTwitterHref(twitterHref) {
@@ -57,14 +60,10 @@ Component.register('sw-cms-el-twitter-timeline', {
             }
         },
 
-        twitterHref() {
+        getTwitterHref() {
             const elemData = this.element.config;
-            const twitterHandle = this.twitterHandle();
+            const twitterHandle = this.getTwitterHandle();
             if (elemData && elemData.timelineType) {
-                if (elemData.timelineType.value === 'profile') {
-                    return twitterHandle;
-                }
-
                 if (elemData.timelineType.value === 'profileLikes') {
                     return twitterHandle + '/likes';
                 }
@@ -77,13 +76,17 @@ Component.register('sw-cms-el-twitter-timeline', {
                     return twitterHandle + '/lists/' + elemData.timelineList.value;
                 }
             }
+
+            return twitterHandle; // in default profile will be returned
         },
 
-        twitterText() {
+        getTwitterText() {
             const elemData = this.element.config;
             if (elemData && elemData.twitterHandle) {
                 return 'Tweets by ' + elemData.twitterHandle.value;
             }
+
+            return 'Tweets by flagbit';
         },
 
         getTwitterJsSrc() {
@@ -106,11 +109,11 @@ Component.register('sw-cms-el-twitter-timeline', {
 
         addTwitterLink() {
             const component = this.$refs.twitterTimeline;
-            const twitterHref = this.twitterHref();
+            const twitterHref = this.getTwitterHref();
             let a = document.createElement('a');
-            a.appendChild(document.createTextNode(this.twitterText()));
+            a.appendChild(document.createTextNode(this.getTwitterText()));
             a.className = 'twitter-timeline';
-            a.title = this.twitterText();
+            a.title = this.getTwitterText();
             a.href = twitterHref;
             component.appendChild(a);
             this.setTwitterHref(twitterHref);

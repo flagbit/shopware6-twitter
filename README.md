@@ -1,6 +1,7 @@
 # Twitter Plugin for Shopware 6
 This plugin will add custom twitter cms elements to your shopware 6 store.  
 All possible twitter elements you can see at [publish.twitter.com](https://publish.twitter.com/).
+
 ## Custom twitter elements 
 * Twitter Timelines
   * For profiles :white_check_mark:
@@ -14,12 +15,15 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 * Twitter tweet as quote :construction:
 * Twitter moment :construction:
 > Legend: Implemented :white_check_mark:, Under construction :construction:
+
 ## Requirements
 * Shopware 6.1. at least
 * PHP 7.2 at least
-## Screens
-###Twitter timeline frontend  
-![Twitter timeline in frontend](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-frontend.png "Twitter timeline in frontend")
-###Twitter timeline backend  
-![Twitter timeline backend configuration](https://raw.githubusercontent.com/flagbit/shopware6-twitter/97b07d18b75e5d0cdc1623b2c3c3b80f396c1b29/docs/images/shopware-6-twitter-timeline-backend.png "Twitter timeline backend configuration")
 
+## Screens
+
+###Twitter timeline frontend
+![Twitter timeline in frontend](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-frontend.png "Twitter timeline in frontend")
+
+###Twitter timeline backend
+![Twitter timeline backend configuration](https://raw.githubusercontent.com/flagbit/shopware6-twitter/master/docs/images/shopware-6-twitter-timeline-backend.png "Twitter timeline backend configuration")
