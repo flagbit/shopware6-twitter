@@ -11,11 +11,9 @@ Shopware.Service('cmsService').registerCmsElement({
     previewComponent: 'sw-cms-el-preview-twitter-buttons',
     service: 'configDataProviderService',
     defaultConfig: {
-        twitterButtons: {
-            handle: '',
-            userId: '',
-            buttonType: '',
-            buttonOptions: {},
-        }
+        handle: '',
+        userId: '',
+        buttonType: '',
+        buttonOptions: {}
     }
 });

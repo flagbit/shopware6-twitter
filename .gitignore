@@ -1,3 +1,4 @@
 vendor
 composer.lock
 src/Resources/public/administration/
+src/Resources/app/administration/src/node_modules/
