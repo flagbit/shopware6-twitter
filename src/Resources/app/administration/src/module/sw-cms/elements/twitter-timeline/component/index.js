@@ -1,7 +1,7 @@
 import template from './sw-cms-el-twitter-timeline.html.twig';
 import './sw-cms-el-twitter-timeline.scss';
 
-const { Component, Mixin } = Shopware;
+const {Component, Mixin} = Shopware;
 
 
 Component.register('sw-cms-el-twitter-timeline', {
@@ -17,6 +17,24 @@ Component.register('sw-cms-el-twitter-timeline', {
                 this.updateTwitterJs();
             },
             deep: true
+        },
+        'element.config.timelineType': {
+            handler() {
+                this.updateTwitterJs();
+            },
+            deep: true
+        },
+        'element.config.timelineCollection': {
+            handler() {
+                this.updateTwitterJs();
+            },
+            deep: true
+        },
+        'element.config.timelineList': {
+            handler() {
+                this.updateTwitterJs();
+            },
+            deep: true
         }
     },
 
@@ -25,24 +43,54 @@ Component.register('sw-cms-el-twitter-timeline', {
     },
 
     methods: {
-        twitterHandle() {
+        getTwitterHandle() {
             const elemData = this.element.config;
-
+            const twitterUrl = 'https://twitter.com/';
             if (elemData && elemData.twitterHandle) {
-                return 'https://twitter.com/' + this.element.config.twitterHandle.value;
+                return twitterUrl + elemData.twitterHandle.value;
+            }
+
+            return twitterUrl + 'flagbit';
+        },
+
+        setTwitterHref(twitterHref) {
+            const elemData = this.element.config;
+            if (elemData && elemData.twitterHref) {
+                elemData.twitterHref.value = twitterHref;
             }
         },
 
-        twitterText() {
+        getTwitterHref() {
             const elemData = this.element.config;
+            const twitterHandle = this.getTwitterHandle();
+            if (elemData && elemData.timelineType) {
+                if (elemData.timelineType.value === 'profileLikes') {
+                    return twitterHandle + '/likes';
+                }
 
-            if (elemData && elemData.twitterHandle) {
-                return 'Tweets by ' + this.element.config.twitterHandle.value;
+                if (elemData.timelineType.value === 'collections' && elemData.timelineCollection) {
+                    return twitterHandle + '/timelines/' + elemData.timelineCollection.value;
+                }
+
+                if (elemData.timelineType.value === 'lists' && elemData.timelineList) {
+                    return twitterHandle + '/lists/' + elemData.timelineList.value;
+                }
             }
+
+            return twitterHandle; // default profile will be returned
+        },
+
+        getTwitterText() {
+            const elemData = this.element.config;
+            if (elemData && elemData.twitterHandle) {
+                return 'Tweets by ' + elemData.twitterHandle.value;
+            }
+
+            return 'Tweets by flagbit';
         },
 
         getTwitterJsSrc() {
-          return 'https://platform.twitter.com/widgets.js';
+            return 'https://platform.twitter.com/widgets.js';
         },
 
         queryTwitterSrc() {
@@ -61,12 +109,14 @@ Component.register('sw-cms-el-twitter-timeline', {
 
         addTwitterLink() {
             const component = this.$refs.twitterTimeline;
+            const twitterHref = this.getTwitterHref();
             let a = document.createElement('a');
-            a.appendChild(document.createTextNode(this.twitterText()));
+            a.appendChild(document.createTextNode(this.getTwitterText()));
             a.className = 'twitter-timeline';
-            a.title = this.twitterText();
-            a.href = this.twitterHandle();
+            a.title = this.getTwitterText();
+            a.href = twitterHref;
             component.appendChild(a);
+            this.setTwitterHref(twitterHref);
         },
 
         removeTwitterJs() {
