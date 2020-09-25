@@ -21,9 +21,17 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 * PHP 7.2 at least
 
 ## Installation
+Require the module via composer  
 `composer require "flagbit/plugin-twitter" "v0.0.2"`  
-`bin/console plugin:refresh`
-`bin/console plugin:install --activate --clearCache PluginTwitter`    
+
+Check if the plugin is known by shopware  
+`bin/console plugin:refresh && bin/console plugin:list`  
+
+If the plugin is known, install and activate the plugin  
+`bin/console plugin:install --activate --clearCache PluginTwitter`  
+
+Build a new fresh administration with all the updated js  
+`php psh.phar administration:build`  
 
 ## Screens
 
