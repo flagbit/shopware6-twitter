@@ -20,6 +20,11 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 * Shopware 6.1. at least
 * PHP 7.2 at least
 
+## Installation
+`composer require "flagbit/plugin-twitter" "v0.0.2"`  
+`bin/console plugin:refresh`
+`bin/console plugin:install --activate --clearCache PluginTwitter`    
+
 ## Screens
 
 ### Twitter timeline frontend
