@@ -1,11 +1,40 @@
 {% block sw_cms_element_twitter_timeline_config %}
-    <div class="sw-cms-el-config-twitter-timeline">
+<div class="sw-cms-el-config-twitter-timeline">
+    {% block sw_cms_element_twitter_timeline_config_twitter_handle %}
         <sw-field class="twitter-handle-field"
                   v-model="element.config.twitterHandle.value"
                   type="text"
-                  label="Twitter Timeline"
-                  placeholder="Enter Twitter Handle."
-                  @blur="onBlur">
+                  :label="$tc('sw-cms.elements.twitterHandle.label')"
+                  :placeholder="$tc('sw-cms.elements.twitterHandle.placeHolder')">
         </sw-field>
-    </div>
+    {% endblock %}
+
+    {% block sw_cms_element_twitter_timeline_config_timeline_type %}
+    <sw-select-field v-model="element.config.timelineType.value"
+                     :label="$tc('sw-cms.elements.twitterTimeline.type.label')"
+                     :options="selectOptions"
+                     :placeholder="$tc('sw-cms.elements.twitterTimeline.type.placeHolder')">
+    </sw-select-field>
+    {% endblock %}
+
+    {% block sw_cms_element_twitter_timeline_config_timeline_list %}
+    <sw-field class="timeline-list-field"
+              v-if="showListsField()"
+              v-model="element.config.timelineList.value"
+              type="text"
+              :label="$tc('sw-cms.elements.timelineList.label')"
+              :placeholder="$tc('sw-cms.elements.timelineList.placeHolder')">
+    </sw-field>
+    {% endblock %}
+
+    {% block sw_cms_element_twitter_timeline_config_timeline_collection %}
+    <sw-field class="timeline-collection-field"
+              v-if="showCollectionsField()"
+              v-model="element.config.timelineCollection.value"
+              type="text"
+              :label="$tc('sw-cms.elements.timelineCollection.label')"
+              :placeholder="$tc('sw-cms.elements.timelineCollection.placeHolder')">
+    </sw-field>
+    {% endblock %}
+</div>
 {% endblock %}

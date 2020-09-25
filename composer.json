@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "php": "~7.2|~7.3",
-    "shopware/core": "6.1.*"
+    "php": "^7.2",
+    "shopware/core": "^6.1.*"
   },
   "extra": {
     "shopware-plugin-class": "Flagbit\\PluginTwitter\\PluginTwitter",
