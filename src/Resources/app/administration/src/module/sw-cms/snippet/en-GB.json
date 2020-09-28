@@ -28,7 +28,7 @@
         "label": "Twitter Buttons",
         "placeHolder" : "Choose Twitter Button Type",
         "share": {
-          "label": "Share Button"
+          "label": "Twitter Share Button"
         },
         "follow": {
           "label": "Follow Button",
@@ -39,7 +39,7 @@
           }
         },
         "mention": {
-          "label": "Mention Button",
+          "label": "Twitter Mention Button",
           "options": {
             "handle": {
               "placeholder": "Paste a username e.g. Brocksinet"
@@ -47,7 +47,7 @@
           }
         },
         "hashtag": {
-          "label": "Hashtag Button",
+          "label": "Twitter Hashtag Button",
           "options": {
             "handle": {
               "placeholder": "Paste a #hashtag"
@@ -55,7 +55,7 @@
           }
         },
         "message": {
-          "label": "Message Button",
+          "label": "Twitter Message Button",
           "options": {
             "handle": {
               "placeholder": "Paste a username e.g. Brocksinet"
