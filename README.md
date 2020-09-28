@@ -1,19 +1,24 @@
 # Twitter Plugin for Shopware 6
+
 This plugin will add custom twitter cms elements to your shopware 6 store.  
 All possible twitter elements you can see at [publish.twitter.com](https://publish.twitter.com/).
 
 ## Custom twitter elements 
+
 * Twitter Timelines
   * For profiles :white_check_mark:
   * For collections :white_check_mark:
   * For lists :white_check_mark:
   * For profile likes :white_check_mark:
 * Twitter Buttons
-  * Follow :construction:
-  * Mention :construction:
-  * Hashtag :construction:
+  * Share :white_check_mark:
+  * Follow :white_check_mark:
+  * Mention :white_check_mark:
+  * Hashtag :white_check_mark:
+  * Message :white_check_mark:
 * Twitter tweet as quote :construction:
 * Twitter moment :construction:
+
 > Legend: Implemented :white_check_mark:, Under construction :construction:
 
 ## Requirements

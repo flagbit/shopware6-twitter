@@ -1,0 +1,12 @@
+{
+  "name": "flagbit-plugin-twitter",
+  "version": "1.0.0",
+  "description": "Administration for Twitter Plugin",
+  "main": "index.js",
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0"
+  },
+  "devDependencies": {},
+  "author": "Flagbit GmbH",
+  "license": "MIT"
+}
