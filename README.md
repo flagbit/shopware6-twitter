@@ -27,7 +27,7 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 
 ## Installation
 Require the module via composer  
-`composer require "flagbit/plugin-twitter" "v0.0.2"`  
+`composer require "flagbit/plugin-twitter" "v0.0.3"`  
 
 Check if the plugin is known by shopware  
 `bin/console plugin:refresh && bin/console plugin:list`  
