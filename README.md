@@ -1,19 +1,24 @@
 # Twitter Plugin for Shopware 6
+
 This plugin will add custom twitter cms elements to your shopware 6 store.  
 All possible twitter elements you can see at [publish.twitter.com](https://publish.twitter.com/).
 
 ## Custom twitter elements 
+
 * Twitter Timelines
   * For profiles :white_check_mark:
   * For collections :white_check_mark:
   * For lists :white_check_mark:
   * For profile likes :white_check_mark:
 * Twitter Buttons
-  * Follow :construction:
-  * Mention :construction:
-  * Hashtag :construction:
+  * Share :white_check_mark:
+  * Follow :white_check_mark:
+  * Mention :white_check_mark:
+  * Hashtag :white_check_mark:
+  * Message :white_check_mark:
 * Twitter tweet as quote :construction:
 * Twitter moment :construction:
+
 > Legend: Implemented :white_check_mark:, Under construction :construction:
 
 ## Requirements
@@ -21,9 +26,17 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 * PHP 7.2 at least
 
 ## Installation
+Require the module via composer  
 `composer require "flagbit/plugin-twitter" "v0.0.2"`  
-`bin/console plugin:refresh`
-`bin/console plugin:install --activate --clearCache PluginTwitter`    
+
+Check if the plugin is known by shopware  
+`bin/console plugin:refresh && bin/console plugin:list`  
+
+If the plugin is known, install and activate the plugin  
+`bin/console plugin:install --activate --clearCache PluginTwitter`  
+
+Build a new fresh administration with all the updated js  
+`php psh.phar administration:build`  
 
 ## Screens
 

@@ -12,7 +12,7 @@
           "lists": "Lists Timeline"
         }
       },
-      "twitterHandle": {
+      "handle": {
         "label": "Twitter Handle",
         "placeHolder": "Enter Twitter Handle."
       },
@@ -23,6 +23,49 @@
       "timelineCollection": {
         "label": "Collection Timeline",
         "placeHolder": "Enter Collection ID like e.g. 539487832448843776"
+      },
+      "twitterButton": {
+        "label": "Twitter Buttons",
+        "placeHolder" : "Choose Twitter Button Type",
+        "share": {
+          "label": "Twitter Share Button"
+        },
+        "follow": {
+          "label": "Follow Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a username e.g. Brocksinet"
+            }
+          }
+        },
+        "mention": {
+          "label": "Twitter Mention Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a username e.g. Brocksinet"
+            }
+          }
+        },
+        "hashtag": {
+          "label": "Twitter Hashtag Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a #hashtag"
+            }
+          }
+        },
+        "message": {
+          "label": "Twitter Message Button",
+          "options": {
+            "handle": {
+              "placeholder": "Paste a username e.g. Brocksinet"
+            },
+            "userId": {
+              "label": "User ID",
+              "placeholder": "Paste a user ID"
+            }
+          }
+        }
       }
     }
   }

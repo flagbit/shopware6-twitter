@@ -12,7 +12,7 @@
           "lists": "Listen-Zeitachse"
         }
       },
-      "twitterHandle": {
+      "handle": {
         "label": "Twitter Kürzel (Handle)",
         "placeHolder": "Twitter Kürzel (Handle) eingeben."
       },
@@ -23,6 +23,49 @@
       "timelineCollection": {
         "label": "Sammlungs-Zeitachse",
         "placeHolder": "Geben eine Sammlungs-ID wie z.B. 539487832448843776 ein."
+      },
+      "twitterButton": {
+        "label": "Twitter Button",
+        "placeHolder" : "Choose Twitter Button Type",
+        "share": {
+          "label": "Twitter Share Button"
+        },
+        "follow": {
+          "label": "Twitter Follow Button",
+          "options": {
+            "handle": {
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
+            }
+          }
+        },
+        "mention": {
+          "label": "Twitter Mention Button",
+          "options": {
+            "handle": {
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
+            }
+          }
+        },
+        "hashtag": {
+          "label": "Twitter Hashtag Button",
+          "options": {
+            "handle": {
+              "placeholder": "Trage einen #hashtag ein"
+            }
+          }
+        },
+        "message": {
+          "label": "Twitter Message Button",
+          "options": {
+            "handle": {
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
+            },
+            "userId": {
+              "label": "User ID",
+              "placeholder": "Trage die Benutzer ID des Empfängers ein"
+            }
+          }
+        }
       }
     }
   }

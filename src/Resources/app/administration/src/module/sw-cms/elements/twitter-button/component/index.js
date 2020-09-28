@@ -1,11 +1,10 @@
-import template from './sw-cms-el-twitter-timeline.html.twig';
-import './sw-cms-el-twitter-timeline.scss';
+import template from './sw-cms-el-twitter-button.html.twig';
+import './sw-cms-el-twitter-button.scss';
 import twitter from '../../../../../lib/twitter';
 
 const {Component, Mixin} = Shopware;
 
-
-Component.register('sw-cms-el-twitter-timeline', {
+Component.register('sw-cms-el-twitter-button', {
     template,
 
     mixins: [
@@ -13,25 +12,19 @@ Component.register('sw-cms-el-twitter-timeline', {
     ],
 
     watch: {
+        'element.config.buttonType': {
+            handler() {
+                this.updateTwitterJs();
+            },
+            deep: true
+        },
         'element.config.handle': {
             handler() {
                 this.updateTwitterJs();
             },
             deep: true
         },
-        'element.config.timelineType': {
-            handler() {
-                this.updateTwitterJs();
-            },
-            deep: true
-        },
-        'element.config.timelineCollection': {
-            handler() {
-                this.updateTwitterJs();
-            },
-            deep: true
-        },
-        'element.config.timelineList': {
+        'element.config.userId': {
             handler() {
                 this.updateTwitterJs();
             },
@@ -46,18 +39,18 @@ Component.register('sw-cms-el-twitter-timeline', {
     methods: {
         updateTwitterJs() {
             const element = this.element.config;
-            const component = this.$refs.twitterTimeline;
-            const href = twitter.getTwitterTimelineHref(element, twitter.getHandle(element));
-            const className = 'twitter-timeline';
+            const component = this.$refs.twitterButton;
+            const href = twitter.getTwitterButtonHref(element);
+            const className = twitter.getTwitterButtonClassName(element);
 
             twitter.removeTwitterJs();
             twitter.removeTwitterIframe(component);
-            twitter.addTwitterLink(component, href, twitter.getTwitterTimelineText(element), className)
+            twitter.addTwitterLink(component, href, twitter.getTwitterButtonText(element), className)
             twitter.addTwitterJs();
         },
 
         createdComponent() {
-            this.initElementConfig('twitter-timeline');
+            this.initElementConfig('twitter-button');
         }
     }
 });
