@@ -1,5 +1,5 @@
 import './module/sw-cms/elements/twitter-timeline';
-import './module/sw-cms/elements/twitter-buttons';
+import './module/sw-cms/elements/twitter-button';
 import deDE from './module/sw-cms/snippet/de-DE.json';
 import enGB from './module/sw-cms/snippet/en-GB.json';
 

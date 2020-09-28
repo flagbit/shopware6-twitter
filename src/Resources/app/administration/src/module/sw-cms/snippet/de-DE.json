@@ -12,7 +12,7 @@
           "lists": "Listen-Zeitachse"
         }
       },
-      "twitterHandle": {
+      "handle": {
         "label": "Twitter Kürzel (Handle)",
         "placeHolder": "Twitter Kürzel (Handle) eingeben."
       },
@@ -24,21 +24,17 @@
         "label": "Sammlungs-Zeitachse",
         "placeHolder": "Geben eine Sammlungs-ID wie z.B. 539487832448843776 ein."
       },
-      "twitterButtons": {
-        "label": "Twitter Buttons",
+      "twitterButton": {
+        "label": "Twitter Button",
+        "placeHolder" : "Choose Twitter Button Type",
         "share": {
-          "label": "Twitter Share Button",
-          "options": {
-            "handle": {
-              "placeholder": ""
-            }
-          }
+          "label": "Twitter Share Button"
         },
         "follow": {
           "label": "Twitter Follow Button",
           "options": {
             "handle": {
-              "placeholder": "Paste a profile URL or @username"
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
             }
           }
         },
@@ -46,7 +42,7 @@
           "label": "Twitter Mention Button",
           "options": {
             "handle": {
-              "placeholder": "Paste a profile URL or @username"
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
             }
           }
         },
@@ -54,7 +50,7 @@
           "label": "Twitter Hashtag Button",
           "options": {
             "handle": {
-              "placeholder": "Paste a hashtag URL or #hashtag"
+              "placeholder": "Trage einen #hashtag ein"
             }
           }
         },
@@ -62,10 +58,11 @@
           "label": "Twitter Message Button",
           "options": {
             "handle": {
-              "placeholder": "Paste a profile URL or @username"
+              "placeholder": "Trage den Benutzernamen ein z.B. Brocksinet"
             },
             "userId": {
-              "placeholder": "Paste a user ID"
+              "label": "User ID",
+              "placeholder": "Trage die Benutzer ID des Empfängers ein"
             }
           }
         }

@@ -1,0 +1,31 @@
+{% block sw_cms_element_twitter_button_config %}
+<div class="sw-cms-el-config-twitter-button">
+    {% block sw_cms_element_twitter_button_config_button_type %}
+        <sw-select-field v-model="element.config.buttonType.value"
+                         :label="$tc('sw-cms.elements.twitterButton.label')"
+                         :options="selectOptions"
+                         :placeholder="$tc('sw-cms.elements.twitterButton.placeHolder')">
+        </sw-select-field>
+    {% endblock %}
+
+    {% block sw_cms_element_twitter_button_config_handle %}
+        <sw-field class="twitter-button-handle-field"
+                  v-if="showHandleField()"
+                  v-model="element.config.handle.value"
+                  type="text"
+                  :label="$tc(`sw-cms.elements.twitterButton.${element.config.buttonType.value}.label`)"
+                  :placeholder="$tc(`sw-cms.elements.twitterButton.${element.config.buttonType}.options.handle.placeholder`)">
+        </sw-field>
+    {% endblock %}
+
+    {% block sw_cms_element_twitter_button_config_user_id %}
+        <sw-field class="twitter-button-user-id-field"
+                  v-if="showUserId()"
+                  v-model="element.config.userId.value"
+                  type="text"
+                  :label="$tc('sw-cms.elements.twitterButton.message.options.userId.label')"
+                  :placeholder="$tc('sw-cms.elements.twitterButton.message.options.userId.placeholder')">
+        </sw-field>
+    {% endblock %}
+</div>
+{% endblock %}
