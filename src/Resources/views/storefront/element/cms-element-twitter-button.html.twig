@@ -1,6 +1,6 @@
-{% block element_twitter_timeline %}
+{% block element_twitter_button %}
     <div data-twitter-timeline="true">
-        <a class="twitter-timeline"
+        <a class="{{ element.config.className.value }}"
            href="{{ element.config.href.value }}">
             Tweets by {{ element.config.handle.value }}
         </a>

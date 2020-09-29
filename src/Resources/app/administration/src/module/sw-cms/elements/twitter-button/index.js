@@ -24,6 +24,10 @@ Shopware.Service('cmsService').registerCmsElement({
         userId: {
             source: 'static',
             value: '',
+        },
+        className: {
+            source: 'static',
+            value: '',
         }
     }
 });

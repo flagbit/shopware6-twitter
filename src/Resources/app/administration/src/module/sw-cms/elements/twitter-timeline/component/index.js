@@ -54,10 +54,15 @@ Component.register('sw-cms-el-twitter-timeline', {
             twitter.removeTwitterIframe(component);
             twitter.addTwitterLink(component, href, twitter.getTwitterTimelineText(element), className)
             twitter.addTwitterJs();
+            this.updateValues(href);
         },
 
         createdComponent() {
             this.initElementConfig('twitter-timeline');
+        },
+
+        updateValues(href) {
+            this.element.config.href.value = href;
         }
     }
 });
