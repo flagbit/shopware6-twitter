@@ -47,10 +47,16 @@ Component.register('sw-cms-el-twitter-button', {
             twitter.removeTwitterIframe(component);
             twitter.addTwitterLink(component, href, twitter.getTwitterButtonText(element), className)
             twitter.addTwitterJs();
+            this.updateValues(href, className)
         },
 
         createdComponent() {
             this.initElementConfig('twitter-button');
+        },
+
+        updateValues(href, className, text) {
+            this.element.config.href.value = href;
+            this.element.config.className.value = className;
         }
     }
 });
