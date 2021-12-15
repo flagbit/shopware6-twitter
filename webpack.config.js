@@ -8,7 +8,7 @@ const isProd = process.env.mode === 'production';
 module.exports = {
     mode: isProd ? 'production' : 'development',
     optimization: {
-        minimize: true,
+        minimize: false,
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
@@ -56,7 +56,7 @@ module.exports = {
 
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'static/css/[name].css'
+            filename: 'css/flagbit-twitter.css'
         }),
     ],
 
@@ -65,7 +65,7 @@ module.exports = {
     },
 
     output: {
-        path: path.resolve(__dirname, 'src/Resources/public/administration/js'),
-        filename: 'plugin-twitter.js',
+        path: path.resolve(__dirname, 'src/Resources/public/administration'),
+        filename: 'js/flagbit-twitter.js',
     },
 };
