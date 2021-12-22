@@ -22,8 +22,8 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 > Legend: Implemented :white_check_mark:, Under construction :construction:
 
 ## Requirements
-* Shopware 6.1. at least
-* PHP 7.2 at least
+* Shopware 6.4. at least
+* PHP 7.4 at least
 
 ## Installation
 Require the module via composer  
