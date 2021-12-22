@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Flagbit\PluginTwitter;
+namespace Flagbit\Twitter;
 
 use Shopware\Core\Framework\Plugin;
 
-class PluginTwitter extends Plugin
+class FlagbitTwitter extends Plugin
 {
 
 }
