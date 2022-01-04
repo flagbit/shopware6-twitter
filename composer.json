@@ -4,22 +4,15 @@
   "version": "v0.0.3",
   "type": "shopware-platform-plugin",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Björn Meyer",
-      "role": "Developer"
-    },
-    {
-      "name": "Nico Just",
-      "role": "Developer"
-    }
-  ],
+  "authors": [{
+    "name": "Flagbit GmbH & Co. KG"
+  }],
   "require": {
-    "php": "^7.2",
-    "shopware/core": "^6.1"
+    "php": "^7.4",
+    "shopware/core": "^6.4"
   },
   "extra": {
-    "shopware-plugin-class": "Flagbit\\PluginTwitter\\PluginTwitter",
+    "shopware-plugin-class": "Flagbit\\Twitter\\FlagbitTwitter",
     "label": {
       "de-DE": "Twitter Plugin",
       "en-GB": "Twitter Plugin"
@@ -31,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Flagbit\\PluginTwitter\\": "src/"
+      "Flagbit\\Twitter\\": "src/"
     }
   }
 }

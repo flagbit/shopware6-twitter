@@ -22,8 +22,8 @@ All possible twitter elements you can see at [publish.twitter.com](https://publi
 > Legend: Implemented :white_check_mark:, Under construction :construction:
 
 ## Requirements
-* Shopware 6.1. at least
-* PHP 7.2 at least
+* Shopware 6.4. at least
+* PHP 7.4 at least
 
 ## Installation
 Require the module via composer  
@@ -33,7 +33,7 @@ Check if the plugin is known by shopware
 `bin/console plugin:refresh && bin/console plugin:list`  
 
 If the plugin is known, install and activate the plugin  
-`bin/console plugin:install --activate --clearCache PluginTwitter`  
+`bin/console plugin:install FlagbitTwitter --activate --clearCache`  
 
 Build a new fresh administration with all the updated js  
 `php psh.phar administration:build`  
